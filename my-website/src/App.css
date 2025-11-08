@@ -1,42 +1,146 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
+.App {
   padding: 2rem;
+  font-family: Consolas;
+  scroll-behavior: smooth;
+}
+
+.App h1 {
+  font-size: 4rem;
+}
+
+.header {
+    text-align: center;
+    margin: 0;
+    color: #bb86fc;
+}
+
+.navi {
+    list-style: none;
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.nav-button {
+    background: none;
+    border: 2px solid #bb86fc;
+    border-radius: 20px;
+    color: #bb86fc;
+    font-family: Consolas;
+    font-size: 1rem;
+    cursor: pointer;
+    padding: 8px 10px;
+    white-space: nowrap;
+}
+
+.nav-button:hover {
+    color: #f9f9f9;
+    background-color: #bb86fc;
+}
+
+.navi li {
+    margin: 0 100px; 
+    padding: 10px;
+}
+
+.App .mini-heading {
+    font-family: Consolas;
+    padding: 0 1em 1em 2.5em;
+    font-size: 3em;
+    color: #EA80FC;
+}
+
+.intro {
+    font-size: 1.1em;
+    padding: 0 0 0 6.75em;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.side-img {
+    width: 450px;
+    height: auto;
+    margin: 20px 120px 20px 20px;
+    padding-top: 2em;
+}
+
+.blinker {
+    animation: brand-blinker 1s step-end infinite;
+}
+
+@keyframes brand-blinker {
+    0%, 50% {
+        opacity: 1;
+    }
+
+    50.01%, 100% {
+        opacity: 0;
+    }
+}
+
+.timeline {
+  display: flex;
+  align-items: center; 
+  justify-content: center;
+  margin-top: 2em;
+}
+
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: #bb86fc;
+  border-radius: 50%;
+  position: relative;
+}
+
+.circle:hover {
+  box-shadow: 0 0 10px #bb86fc;
+  transform: scale(1.3);
+  cursor: pointer;
+}
+
+.circle:hover::before,
+.circle:hover::after {
+  transform: translateX(-50%) scale(0.833);
+}
+
+.circle::before,
+.circle::after {
+  display: block;         
+  white-space: nowrap;   
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
   text-align: center;
+  font-size: 12px;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.circle::before {
+  top: -30px;
+  content: attr(data-top);
+  white-space: nowrap;  
+  font-size: 1em;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.circle::after {
+  bottom: -110px;
+  content: attr(data-bottom);
+  white-space: normal;
+  width: 140px;
+  line-height: 1.5;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.line {
+  width: 200px;
+  height: 4px;
+  background-color: #bb86fc;
 }
 
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
