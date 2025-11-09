@@ -1,7 +1,7 @@
 .App {
-  padding: 2rem;
-  font-family: Consolas;
-  scroll-behavior: smooth;
+    padding: 2rem;
+    font-family: Consolas;
+    scroll-behavior: smooth;
 }
 
 .App h1 {
@@ -41,7 +41,7 @@
 }
 
 .navi li {
-    margin: 0 100px; 
+    margin: 0 70px; 
     padding: 10px;
 }
 
@@ -89,6 +89,7 @@
   align-items: center; 
   justify-content: center;
   margin-top: 2em;
+  flex-wrap: wrap;
 }
 
 .circle {
@@ -144,3 +145,227 @@
   background-color: #bb86fc;
 }
 
+.exp-cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 200px;
+    padding: 0 10px 0 10px;
+    gap: 40px;
+    font-size: 1em;
+    color: #F06292;
+}
+
+.proj-cards {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 30px;
+    padding: 0 10px 0 10px;
+    gap: 40px;
+    font-size: 1em;
+    color: #F06292;
+}
+
+.card1:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #F06292;
+}
+
+.card3:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #F06292;
+}
+
+.card2:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #F06292;
+}
+
+.p1:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #EF9A9A;
+}
+
+.p2:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #EF9A9A;
+}
+
+.p3:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #EF9A9A;
+}
+
+.p4:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px #EF9A9A;
+}
+
+.rectangle {
+    display: block;
+    width: 335px;
+    height: 370px;
+    border: 3px solid #F06292;
+    background-color: none;
+    border-radius: 20%;
+    position: relative;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    padding: 15px 20px 25px 25px;
+}
+
+.proj {
+    display: block;
+    width: 265px;
+    height: 260px;
+    border: 3px solid #EF9A9A;
+    background-color: none;
+    border-radius: 25%;
+    position: relative;
+    align-items: flex-start;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 15px 10px 15px;
+    color: #EF9A9A;
+}
+
+.proj a {
+    color: #bb86fc;
+}
+
+.rectangle li {
+    text-align: left;
+}
+
+.job-title {
+    color: #bb86fc;
+}
+
+.skill-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill {
+    display: inline-block;
+    min-width: 3em;
+    height: 1.5em;
+    border: 2px solid #bb86fc;
+    color: #bb86fc;
+    border-radius: 1em;
+    padding: 0 0.5em;
+    text-align: center;
+    background-color: transparent;
+    margin-right: 10px;
+}
+
+.three {
+    color: #EF9A9A;
+}
+
+.two {
+    color: #FFE57F;
+}
+
+.four {
+    color: #F4FF81;
+}
+
+.skill2 {
+    display: inline-block;
+    min-width: 3em;
+    height: 1.5em;
+    border: 2px solid #FFE57F;
+    color: #FFE57F;
+    border-radius: 1em;
+    padding: 0 0.5em;
+    text-align: center;
+    background-color: transparent;
+    margin-right: 10px;
+}
+
+.skill3 {
+    display: inline-block;
+    min-width: 3em;
+    height: 1.5em;
+    border: 2px solid #EF9A9A;
+    color: #EF9A9A;
+    border-radius: 1em;
+    padding: 0 0.5em;
+    text-align: center;
+    background-color: transparent;
+    margin-right: 10px;
+}
+
+.skill4 {
+    display: inline-block;
+    min-width: 3em;
+    height: 1.5em;
+    border: 2px solid #F4FF81;
+    color: #F4FF81;
+    border-radius: 1em;
+    padding: 0 0.5em;
+    text-align: center;
+    background-color: transparent;
+    margin-right: 10px;
+}
+
+.five {
+    color: #18FFFF ;
+}
+
+.skill5 {
+    display: inline-block;
+    min-width: 3em;
+    height: 1.5em;
+    border: 2px solid #18FFFF;
+    color: #18FFFF;
+    border-radius: 1em;
+    padding: 0 0.5em;
+    text-align: center;
+    background-color: transparent;
+    margin-right: 10px;
+}
+
+.skill-heading {
+    text-align: center;
+}
+
+.contact {
+    margin: 1em 5em 0 7.5em;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em;
+  width: 300px; 
+  justify-content: space-between;
+}
+
+.contact input, select, textarea{
+  margin-left: 20px;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+  padding: 0.25em
+}
+
+#submitb {
+    background-color: #121212;
+    color: #bb86fc;
+    padding: 0.5em 1em 0.5em 1em;
+    cursor: pointer;
+}
+
+#submitb:hover {
+    color: #121212;
+    background-color: #bb86fc;
+}
